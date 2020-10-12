@@ -1,0 +1,24 @@
+@mixin main-title {
+  clear: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  color: $main-color-black;
+}
+
+@mixin singular-title {
+  display: flex;
+  padding: 0 0 $gap/3 0;
+  justify-content: center;
+}
+
+@mixin singular-content {
+  line-height: 1.7;
+}
+
+@mixin content-wrapper {
+  background-color: $main-color-white;
+  box-shadow: $box-shadow-grey;
+}

@@ -1,0 +1,31 @@
+// colors
+$main-color-blue: #208de5;
+$main-color-blue-light: lighten($main-color-blue, 20%);
+$main-color-grey: #4d4d4d;
+$main-color-light-grey: #a6a6a6;
+$main-color-black: #020202;
+$main-color-white: #ffffff;
+$content-background: #f2f2f2;
+
+// margins
+
+$gap: 35px;
+
+// breakpoints
+
+$mobile_width: 668px;
+$tablet_width: 993px;
+$desktop_width: 1168px;
+$wide_width: 1379px;
+
+// shadows
+
+$box-shadow-grey: 0px 1px 10px -3px rgba(0, 0, 0, 0.1);
+
+// fonts
+$font-size-small: 0.8rem;
+$font-size-big: 1.4rem;
+
+// Transition
+
+$transition: 200ms;

@@ -1,0 +1,66 @@
+.menu-mobile {
+  position: relative;
+  background: transparent;
+  z-index: 9999;
+  display: none;
+}
+.menu-mobile__open {
+  display: block;
+}
+.menu-mobile__wrapper {
+  position: absolute;
+  height: 300vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba($color: black, $alpha: 0.2);
+}
+.menu-mobile__item {
+  height: 300vh;
+  background-color: $main-color-black;
+  color: $main-color-white;
+  width: 400px;
+  position: relative;
+  padding: $gap $gap/2;
+}
+
+// body overflow toggle
+.overlay {
+  overflow: hidden !important;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}
+
+// close icon
+.mobile-menu__close-button::before {
+  position: absolute;
+  top: 6px;
+  right: 5px;
+}
+
+.menu-mobile__item .fa-times:before {
+  content: "\f00d";
+  padding: 3px 5px;
+  color: $main-color-white;
+  background-color: $main-color-grey;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.top {
+  visibility: hidden;
+}
+
+.menu-trigger {
+  color: $main-color-black;
+  font-weight: 700;
+  justify-content: center;
+  a {
+    color: $main-color-black;
+    text-decoration: none;
+    i {
+      padding-left: 10px;
+    }
+  }
+
+  display: none;
+}

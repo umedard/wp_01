@@ -1,0 +1,15 @@
+@media print {
+  .footer__wrapper,
+  .header,
+  .sidebar__box,
+  .pagination__wrapper div,
+  .content-single__postinfo,
+  .sidebar,
+  .content-single__categories,
+  .content-single__img {
+    display: none;
+  }
+  .main {
+    grid-template-columns: 1fr !important;
+  }
+}

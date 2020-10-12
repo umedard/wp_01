@@ -1,0 +1,31 @@
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt {
+  background-color: $main-color-blue;
+  color: $main-color-white;
+  transition: all 3s ease;
+  &:hover {
+    background-color: $main-color-blue-light !important;
+  }
+}
+
+.woocommerce .woocommerce-cart-form {
+  .product-name a {
+    color: $main-color-grey;
+  }
+  .coupon .input-text,
+  table.cart td.actions .coupon .input-text,
+  .woocommerce-cart table.cart td.actions .coupon .input-text,
+  .woocommerce-checkout table.cart td.actions .coupon .input-text {
+    padding: 8px 12px 8px;
+    margin: -4px 6px 0px 0;
+    width: 116px;
+    transform: translateY(5px);
+  }
+}
+
+.woocommerce-privacy-policy-text .woocommerce-privacy-policy-link,
+.woocommerce-LostPassword a {
+  color: $main-color-grey;
+}

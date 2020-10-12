@@ -1,0 +1,38 @@
+.sidebar {
+  display: grid;
+  gap: $gap;
+}
+
+.sidebar__box {
+  padding: $gap;
+  background-color: $main-color-white;
+  box-shadow: $box-shadow-grey;
+}
+
+// title
+.sidebar__title {
+  margin-bottom: $gap/2;
+  font-size: $font-size-big;
+  color: $main-color-black;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+// content
+.sidebar__list {
+  list-style: none;
+}
+
+.sidebar__list a {
+  color: $main-color-grey;
+  text-decoration: none;
+  line-height: 1.3;
+}
+
+.sidebar__list li {
+  padding-bottom: $gap/2.5;
+}
+
+.sidebar__tags > li {
+  display: inline;
+}

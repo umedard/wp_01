@@ -1,0 +1,32 @@
+@import "./product.scss";
+@import "./chart";
+
+// removes sidebar on woocommerce pages
+.woocommerce-page {
+  .sidebar {
+    display: none;
+  }
+  .pagination__wrapper,
+  .content-single__postinfo,
+  .sidebar,
+  .content-single__categories,
+  .content-single__img {
+    display: none;
+  }
+
+  .main {
+    grid-template-columns: 1fr;
+  }
+}
+
+//  set padding main
+.content-page .site-main {
+  padding: 0 $gap/2;
+  a {
+    color: $main-color-grey;
+  }
+}
+
+.woocommerce .content-page {
+  box-shadow: none;
+}

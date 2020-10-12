@@ -1,0 +1,17 @@
+.content-page {
+  @include content-wrapper;
+  padding: $gap;
+}
+
+.content-page__title {
+  @include main-title;
+  @include singular-title;
+}
+
+.content-page__content {
+  @include singular-content;
+}
+
+.content-page__center {
+  text-align: center;
+}

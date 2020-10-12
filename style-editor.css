@@ -1,0 +1,20 @@
+body p {
+  padding-bottom: 17.5px;
+}
+
+body .quote {
+  padding-left: 17.5px;
+  border-left: 3px solid #208de5;
+}
+
+.wp-block {
+  max-width: 800px;
+}
+
+.wp-block[data-align="wide"] {
+  max-width: 800px;
+}
+
+.wp-block[data-align="full"] {
+  max-width: 800px;
+}

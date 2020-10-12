@@ -1,0 +1,16 @@
+.section__container {
+  max-width: $desktop_width;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.section__content {
+  padding: $gap 0;
+  background-color: $content-background;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: $gap;
+}

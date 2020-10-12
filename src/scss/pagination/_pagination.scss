@@ -1,0 +1,24 @@
+.pagination__container {
+  align-self: start;
+  padding: $gap/2;
+  display: flex;
+  justify-content: center;
+  .nav-links * {
+    padding: 0.8125rem 1.25rem;
+    background-color: $main-color-white;
+    color: $main-color-grey;
+    text-decoration: none;
+    transition: all $transition;
+    &:hover {
+      background-color: $main-color-blue;
+      color: $main-color-white;
+    }
+  }
+  .nav-links .current {
+    background-color: $main-color-blue;
+    color: $main-color-white;
+  }
+  .nav-links .dots {
+    padding: 0.8125rem 1.05rem;
+  }
+}

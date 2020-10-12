@@ -1,0 +1,13 @@
+.footer__wrapper {
+  padding: $gap * 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $main-color-black;
+  color: $main-color-light-grey;
+  font-size: $font-size-small;
+}
+
+.footer__date {
+  padding-left: 10px;
+}

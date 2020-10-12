@@ -1,0 +1,103 @@
+.content-archive__content {
+  display: grid;
+  gap: $gap;
+}
+
+.content-archive {
+  display: grid;
+  grid-template-columns: 2.5fr 2fr;
+  @include content-wrapper;
+}
+
+.content-archive__text {
+  padding: $gap;
+  div {
+    padding: 10px 0;
+  }
+}
+
+// icons
+
+[class^="content-archive__icon_"] {
+  padding-right: 20px;
+  white-space: nowrap;
+}
+[class^="content-archive__icon_"]::before {
+  padding-right: 6px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  color: $main-color-blue;
+}
+
+$icons: (
+  "author": "\f007",
+  "category": "\f07b",
+  "date": "\f073",
+);
+
+@each $name, $glyph in $icons {
+  .content-archive__icon_#{$name}::before {
+    content: $glyph;
+  }
+}
+
+.content-archive__icon_author a,
+.content-archive__icon_category a {
+  color: $main-color-grey;
+  text-decoration: none;
+}
+
+.content-archive__title {
+  @include main-title;
+  a {
+    color: $main-color-black;
+    text-decoration: none;
+    transition: all $transition;
+    &:hover {
+      color: $main-color-blue;
+    }
+  }
+}
+
+// button
+.content-archive__more {
+  margin-top: 10px;
+  width: 90px;
+  border-radius: 20px;
+  color: $main-color-white;
+  background-color: black;
+  text-align: center;
+  font-size: 11px;
+  font-weight: bold;
+  transition: all $transition;
+  &:hover {
+    background-color: $main-color-blue;
+    cursor: pointer;
+  }
+  a {
+    color: $main-color-white;
+    text-decoration: none;
+  }
+}
+
+// IMG background
+
+.content-archive__img_wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.content-archive__img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  transition: all $transition;
+  &:hover {
+    transform: scale(1.1) rotate(1deg);
+  }
+}

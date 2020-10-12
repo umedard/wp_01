@@ -1,0 +1,50 @@
+.header__title {
+  width: 100%;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.header__title a {
+  text-decoration: none;
+  color: $main-color-black;
+  transition: all $transition;
+}
+
+.header__title a:hover {
+  color: $main-color-blue;
+}
+
+.header__description {
+  width: 100%;
+  font-size: 1.125rem;
+  color: $main-color-grey;
+}
+
+.header__bar {
+  width: 100%;
+  border-top: 2px solid black;
+  color: $main-color-black;
+}
+
+.header__description,
+.header__title,
+.header__bar,
+.header__menu {
+  display: flex;
+  flex-flow: nowrap row;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.header__categories {
+  display: flex;
+  padding: $gap;
+  justify-content: center;
+  align-items: center;
+  background-color: $main-color-white;
+  font-size: $font-size-big;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $main-color-black;
+  border-top: 1px solid $main-color-light-grey;
+}
